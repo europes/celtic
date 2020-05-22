@@ -45,7 +45,7 @@
 <th>MoM</th>
 <th>CS</th>
 </tr> 
-<tr class="odd">
+<tr class="def">
 <td>GK</td>
 <td>Reina</td>
 <td>18</td>
@@ -54,7 +54,7 @@
 <td>0</td>
 <td>2</td>
 </tr>		
-<tr>
+<tr class="def">
 <td>GK</td>
 <td>Selikhov</td>
 <td>5</td>
@@ -63,7 +63,7 @@
 <td>0</td>
 <td>0</td>
 </tr> 
-<tr class="odd">
+<tr class="def">
 <td>CB</td>
 <td>Nastasic</td>
 <td>4(1)</td>
@@ -72,7 +72,7 @@
 <td>0</td>
 <td>1</td>
 </tr> 
-<tr>
+<tr class="def">
 <td>CB</td>
 <td>Caceres</td>
 <td>17(1)</td>
@@ -81,7 +81,7 @@
 <td>0</td>
 <td>2</td>
 </tr> 
-<tr class="odd">
+<tr class="def">
 <td>CB</td>
 <td>Gomez</td>
 <td>20</td>
@@ -90,7 +90,7 @@
 <td>0</td>
 <td>2</td>
 </tr> 
-<tr>
+<tr class="def">
 <td>LB</td>
 <td>Baines</td>
 <td>0</td>
@@ -99,7 +99,7 @@
 <td>0</td>
 <td>0</td>
 </tr> 
-<tr class="odd">
+<tr class="def">
 <td>LB</td>
 <td>Mohammadi</td>
 <td>17(1)</td>
@@ -108,7 +108,7 @@
 <td>0</td>
 <td>2</td>
 </tr> 
-<tr>
+<tr class="def">
 <td>RB</td>
 <td>Linnes</td>
 <td>7</td>
@@ -126,7 +126,7 @@
 <td>0</td>
 <td>1</td>
 </tr> 
-<tr>
+<tr class="mid">
 <td>DMF</td>
 <td>Rodri</td>
 <td>19</td>
@@ -135,7 +135,7 @@
 <td>0</td>
 <td>1</td>
 </tr> 
-<tr class="odd" >
+<tr class="mid">
 <td>CMF</td>
 <td>Kessie</td>
 <td>10(1)</td>
@@ -144,7 +144,7 @@
 <td>0</td>
 <td>0</td>
 </tr> 
-<tr>
+<tr class="mid">
 <td>CMF</td>
 <td>Hamsik</td>
 <td>17(1)</td>
@@ -153,7 +153,7 @@
 <td>2</td>
 <td>0</td>
 </tr> 
-<tr class="odd">
+<tr class="mid">
 <td>CMF</td>
 <td>Ruiz</td>
 <td>13(1)</td>
@@ -162,7 +162,7 @@
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr class="att">
 <td>LWF</td>
 <td>Calhanoglu</td>
 <td>3(2)</td>
@@ -171,7 +171,7 @@
 <td>0</td>
 <td>0</td>
 </tr> 
-<tr class="odd">
+<tr class="att">
 <td>LWF</td>
 <td>Cervi</td>
 <td>5(2)</td>
@@ -180,7 +180,7 @@
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr class="att">
 <td>LWF</td>
 <td>Bergwijn</td>
 <td>11(4)</td>
@@ -189,7 +189,7 @@
 <td>1</td>
 <td>0</td>
 </tr> 
-<tr class="odd">
+<tr class="att">
 <td>LWF</td>
 <td>Rodrigues</td>
 <td>9(2)</td>
@@ -198,7 +198,7 @@
 <td>0</td>
 <td>0</td>
 </tr> 
-<tr>
+<tr class="att">
 <td>CF</td>
 <td>Musa</td>
 <td>3</td>
@@ -207,7 +207,7 @@
 <td>0</td>
 <td>0</td>
 </tr> 
-<tr class="odd">
+<tr class="att">
 <td>CF</td>
 <td>Leao</td>
 <td>2(5)</td>
@@ -216,7 +216,7 @@
 <td>2</td>
 <td>0</td>
 </tr> 
-<tr>
+<tr class="att">
 <td>CF</td>
 <td>Haaland</td>
 <td>18</td>
@@ -225,7 +225,7 @@
 <td>9</td>
 <td>0</td>
 			</tr>
-			<tr class="odd">
+			<tr class="att">
 <td>CF</td>
 <td>Greizmann</td>
 <td>20(1)</td>
@@ -234,7 +234,7 @@
 <td>2</td>
 <td>0</td>
 </tr>
-			<tr>
+			<tr class="att">
 <td>CF</td>
 <td>Aboubakar</td>
 <td>(1)</td>
@@ -408,16 +408,32 @@ border: 1px dotted black;
 	  text-align: center;
  }
 
-	 tr.odd td {
+	 tr.def td {
 border: 1px dotted black; 
-    color:white;
-   background: #696969;
+    color:black;
+   background: white;
     margin: 0 auto;
 	padding: 10px;
 	  text-align: center;
  }
 
-	
+		 tr.mid td {
+border: 1px dotted black; 
+    color:white;
+   background: red;
+    margin: 0 auto;
+	padding: 10px;
+	  text-align: center;
+ }
+	 tr.att td {
+border: 1px dotted black; 
+    color:white;
+   background: black;
+    margin: 0 auto;
+	padding: 10px;
+	  text-align: center;
+ }
+
 
 
 
